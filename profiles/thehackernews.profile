@@ -1,19 +1,19 @@
 {
   "source": {
     "name": "The Hacker News",
-    "profileName": "thehackernews",
+    "profile_name": "thehackernews",
     "address": "https://thehackernews.com/",
-    "imageURL": "https://thehackernews.com/images/-AaptImXE5Y4/WzjvqBS8HtI/AAAAAAAAxSs/BcCIwpWJszILkuEbDfKZhxQJwOAD7qV6ACLcBGAs/s728-e100/the-hacker-news.jpg",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://thehackernews.com/",
-	"scrapingTargets" : {
-		"containerList" : "div#Blog1",
-		"linkContainers" : "div.body-post",
+    "image_url": "https://thehackernews.com/images/-AaptImXE5Y4/WzjvqBS8HtI/AAAAAAAAxSs/BcCIwpWJszILkuEbDfKZhxQJwOAD7qV6ACLcBGAs/s728-e100/the-hacker-news.jpg",
+    "retrival_method": "scraping",
+    "news_path": "https://thehackernews.com/",
+	"scraping_targets" : {
+		"container_list" : "div#Blog1",
+		"link_containers" : "div.body-post",
 		"links" : "a[href]"
 	}
   },
   "scraping": {
-    "type": "JS:removeTitles;JS:moveImagesOutsideTable",
+    "type": "JS:remove_titles;JS:move_images_outside_table",
 	"meta" : {
 		"author" : "div[itemprop=author] > meta",
 		"publish_date" : "meta[itemprop=datePublished]",

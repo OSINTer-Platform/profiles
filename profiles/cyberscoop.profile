@@ -1,14 +1,14 @@
 {
   "source": {
     "name": "CyberScoop",
-    "profileName": "cyberscoop",
+    "profile_name": "cyberscoop",
     "address": "https://www.cyberscoop.com/",
-    "imageURL": "https://s3.amazonaws.com/sng-global-web-assets/logo/Favicon_CS.png",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://www.cyberscoop.com/news/threats/",
-    "scrapingTargets": {
-      "containerList": "div.articles",
-      "linkContainers": "div.article-thumb__information",
+    "image_url": "https://s3.amazonaws.com/sng-global-web-assets/logo/Favicon_CS.png",
+    "retrival_method": "scraping",
+    "news_path": "https://www.cyberscoop.com/news/threats/",
+    "scraping_targets": {
+      "container_list": "div.articles",
+      "link_containers": "div.article-thumb__information",
       "links": "a.article-thumb__title"
     }
   },

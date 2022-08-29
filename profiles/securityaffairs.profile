@@ -1,14 +1,14 @@
 {
   "source": {
     "name": "Security Affairs",
-    "profileName": "securityaffairs",
+    "profile_name": "securityaffairs",
     "address": "https://securityaffairs.co/",
-    "imageURL": "https://securityaffairs.co/wordpress/wp-content/uploads/2015/12/logo_SecurityAffairs.png",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://securityaffairs.co/wordpress/",
-    "scrapingTargets": {
-      "containerList": "div.sidebar_content",
-      "linkContainers": "div.post_wrapper",
+    "image_url": "https://securityaffairs.co/wordpress/wp-content/uploads/2015/12/logo_SecurityAffairs.png",
+    "retrival_method": "scraping",
+    "news_path": "https://securityaffairs.co/wordpress/",
+    "scraping_targets": {
+      "container_list": "div.sidebar_content",
+      "link_containers": "div.post_wrapper",
       "links": "h3 > a[href]"
     }
   },

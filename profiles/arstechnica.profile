@@ -1,19 +1,19 @@
 {
   "source": {
     "name": "Ars Technica",
-    "profileName": "arstechnica",
+    "profile_name": "arstechnica",
     "address": "https://arstechnica.com/",
-    "imageURL": "https://logos-download.com/wp-content/uploads/2021/02/Ars_Technica_Logo.png",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://arstechnica.com/information-technology/",
-    "scrapingTargets": {
-      "containerList": "main#main > section.with-xrail:nth-child(2) > div > ol",
-      "linkContainers": "li.tease.article",
+    "image_url": "https://logos-download.com/wp-content/uploads/2021/02/Ars_Technica_Logo.png",
+    "retrival_method": "scraping",
+    "news_path": "https://arstechnica.com/information-technology/",
+    "scraping_targets": {
+      "container_list": "main#main > section.with-xrail:nth-child(2) > div > ol",
+      "link_containers": "li.tease.article",
       "links": "a:first-child"
     }
   },
   "scraping": {
-    "type": "JS:scrollDown",
+    "type": "JS:scroll_down",
 	"meta" : {
 		"author" : "a[rel=author] > span[itemprop=name]",
 		"publish_date" : "time.date",

@@ -1,14 +1,14 @@
 {
   "source": {
     "name": "Trend Micro",
-    "profileName": "trendmicro",
+    "profile_name": "trendmicro",
     "address": "https://www.trendmicro.com/",
-    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Trendmicro_logo.jpg",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://blog.trendmicro.com/category/security/",
-	"scrapingTargets": {
-      "containerList": "div.grid-container",
-      "linkContainers": "article.grid-item[data-pageid]",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Trendmicro_logo.jpg",
+    "retrival_method": "scraping",
+    "news_path": "https://blog.trendmicro.com/category/security/",
+	"scraping_targets": {
+      "container_list": "div.grid-container",
+      "link_containers": "article.grid-item[data-pageid]",
       "links": "a.heading[href]"
     }
 

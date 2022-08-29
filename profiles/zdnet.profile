@@ -1,14 +1,14 @@
 {
   "source": {
     "name": "ZDNet",
-    "profileName": "zdnet",
+    "profile_name": "zdnet",
     "address": "https://www.zdnet.com/",
-    "imageURL": "https://www.zdnet.com/a/fly/bundles/zdnetcore/images/logos/zdnet-logo-large.png",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://www.zdnet.com/topic/security/",
-    "scrapingTargets": {
-	  "containerList": "div.river",
-      "linkContainers": "article.item",
+    "image_url": "https://www.zdnet.com/a/fly/bundles/zdnetcore/images/logos/zdnet-logo-large.png",
+    "retrival_method": "scraping",
+    "news_path": "https://www.zdnet.com/topic/security/",
+    "scraping_targets": {
+	  "container_list": "div.river",
+      "link_containers": "article.item",
 	  "links": "a[href]"
     }
   },

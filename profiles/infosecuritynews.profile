@@ -1,14 +1,14 @@
 {
   "source": {
     "name": "Infosecurity News",
-    "profileName": "infosecuritynews",
+    "profile_name": "infosecuritynews",
     "address": "https://www.infosecurity-magazine.com/",
-    "imageURL": "https://di9mr54a05a64.cloudfront.net/api-infosecurityeurope.expoplatform.com/image/500x500xc-f/MTYyMzg4MDM3MzYwY2E3MmI1YTkyYWI=.png",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://www.infosecurity-magazine.com/news/",
-    "scrapingTargets": {
-      "containerList": "div#webpages-list",
-      "linkContainers": "div.webpage-item",
+    "image_url": "https://di9mr54a05a64.cloudfront.net/api-infosecurityeurope.expoplatform.com/image/500x500xc-f/MTYyMzg4MDM3MzYwY2E3MmI1YTkyYWI=.png",
+    "retrival_method": "scraping",
+    "news_path": "https://www.infosecurity-magazine.com/news/",
+    "scraping_targets": {
+      "container_list": "div#webpages-list",
+      "link_containers": "div.webpage-item",
       "links": "a[href]"
     }
   },

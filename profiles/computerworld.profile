@@ -1,14 +1,14 @@
 {
   "source": {
     "name": "Computerworld",
-    "profileName": "computerworld",
+    "profile_name": "computerworld",
     "address": "https://www.computerworld.com/",
-	"imageURL": "https://idge.staticworld.net/ctw/computerworld-logo300x300.png",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://www.computerworld.com/nl/category/security/",
-	"scrapingTargets": {
-	  "containerList": "div.main-col",
-	  "linkContainers": "div.river-well.article",
+	"image_url": "https://idge.staticworld.net/ctw/computerworld-logo300x300.png",
+    "retrival_method": "scraping",
+    "news_path": "https://www.computerworld.com/nl/category/security/",
+	"scraping_targets": {
+	  "container_list": "div.main-col",
+	  "link_containers": "div.river-well.article",
 	  "links": "h3 > a[href]"
 	}
   },

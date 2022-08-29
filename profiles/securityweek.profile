@@ -1,19 +1,19 @@
 {
   "source": {
     "name": "SecurityWeek",
-    "profileName": "securityweek",
+    "profile_name": "securityweek",
     "address": "https://www.securityweek.com/",
-    "imageURL": "https://mms.businesswire.com/media/20210112005589/en/851776/23/SecurityWeek-Logo.jpg",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://feeds.feedburner.com/securityweek",
-    "scrapingTargets": {
-	  "containerList": "div#bodyblock > ul",
-      "linkContainers": "li.regularitem > h4.itemtitle",
+    "image_url": "https://mms.businesswire.com/media/20210112005589/en/851776/23/SecurityWeek-Logo.jpg",
+    "retrival_method": "scraping",
+    "news_path": "https://feeds.feedburner.com/securityweek",
+    "scraping_targets": {
+	  "container_list": "div#bodyblock > ul",
+      "link_containers": "li.regularitem > h4.itemtitle",
 	  "links": "a[href]"
     }
   },
   "scraping": {
-    "type": "JS:fixRelativeLinks",
+    "type": "JS:fix_relative_links",
 	"meta" : {
 		"author" : "div > div.submitted > div > a",
 		"publish_date" : "",

@@ -1,19 +1,19 @@
 {
   "source": {
     "name": "The DFIR Report",
-    "profileName": "dfirreport",
+    "profile_name": "dfirreport",
     "address": "https://thedfirreport.com/",
-    "imageURL": "https://pbs.twimg.com/profile_images/1247257789660934144/2AaKCNiy_400x400.jpg",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://thedfirreport.com/",
-    "scrapingTargets": {
-	  "containerList": "div.posts-holder",
-      "linkContainers": "h2.entry-title",
+    "image_url": "https://pbs.twimg.com/profile_images/1247257789660934144/2AaKCNiy_400x400.jpg",
+    "retrival_method": "scraping",
+    "news_path": "https://thedfirreport.com/",
+    "scraping_targets": {
+	  "container_list": "div.posts-holder",
+      "link_containers": "h2.entry-title",
 	  "links": "a[href]"
     }
   },
   "scraping": {
-    "type": "JS:removeTitles",
+    "type": "JS:remove_titles",
 	"meta" : {
 		"author" : "meta[property='og:site_name']",
 		"publish_date" : "meta[property='article:published_time']",

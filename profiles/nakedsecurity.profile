@@ -1,14 +1,14 @@
 {
   "source": {
     "name": "Naked Security",
-    "profileName": "nakedsecurity",
+    "profile_name": "nakedsecurity",
     "address": "https://nakedsecurity.sophos.com/",
-    "imageURL": "https://www.cybersmartnv.org/business/wp-content/uploads/sites/4/2019/07/NakedSecurity1.png",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://nakedsecurity.sophos.com/",
-    "scrapingTargets": {
-      "containerList": "div#page",
-      "linkContainers": "div.card-content",
+    "image_url": "https://www.cybersmartnv.org/business/wp-content/uploads/sites/4/2019/07/NakedSecurity1.png",
+    "retrival_method": "scraping",
+    "news_path": "https://nakedsecurity.sophos.com/",
+    "scraping_targets": {
+      "container_list": "div#page",
+      "link_containers": "div.card-content",
       "links": "h3 > a[href]"
     }
   },

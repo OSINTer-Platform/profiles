@@ -1,11 +1,11 @@
 {
   "source": {
     "name": "ThreatPost",
-    "profileName": "threatpost",
+    "profile_name": "threatpost",
     "address": "https://threatpost.com/",
-    "imageURL": "https://media.threatpost.com/wp-content/uploads/sites/103/2018/04/12084846/tp_twitter.png",
-    "retrivalMethod": "rss",
-    "newsPath": "https://threatpost.com/feed"
+    "image_url": "https://media.threatpost.com/wp-content/uploads/sites/103/2018/04/12084846/tp_twitter.png",
+    "retrival_method": "rss",
+    "news_path": "https://threatpost.com/feed"
   },
   "scraping": {
     "type": "no-action",

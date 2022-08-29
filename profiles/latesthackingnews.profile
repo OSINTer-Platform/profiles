@@ -1,19 +1,19 @@
 {
   "source": {
     "name": "Latest Hacking News",
-    "profileName": "latesthackingnews",
+    "profile_name": "latesthackingnews",
     "address": "https://latesthackingnews.com/",
-	"imageURL": "https://latesthackingnews.com/wp-content/uploads/2021/01/LHN.png",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://latesthackingnews.com/category/cyber-security-news/",
-	"scrapingTargets": {
-	  "containerList": "ul.penci-wrapper-data",
-	  "linkContainers": "h2.penci-entry-title",
+	"image_url": "https://latesthackingnews.com/wp-content/uploads/2021/01/LHN.png",
+    "retrival_method": "scraping",
+    "news_path": "https://latesthackingnews.com/category/cyber-security-news/",
+	"scraping_targets": {
+	  "container_list": "ul.penci-wrapper-data",
+	  "link_containers": "h2.penci-entry-title",
 	  "links": "a[href]"
 	}
   },
   "scraping": {
-    "type": "JS:fixRelativeLinks",
+    "type": "JS:fix_relative_links",
 	"meta" : {
 		"author" : "",
 		"publish_date" : "meta[property='article:published_time']",

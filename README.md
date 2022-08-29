@@ -26,7 +26,7 @@ whole article for scraping.
 
 ## How can you create a JS injection?
 JS injections are simply vanilla Javascript, and as such you can simply create a
-script, give it a ".js" file extension and put it in the OSINTJSInjection folder
+script, give it a ".js" file extension and put it in the js_injection folder
 to be able to use it when scraping, but there is hovewer a single caveat. Your
 script should start with setting "document.osinterReady" to false, and end with
 changing it to true. This way OSINTer will know to wait for the completion of
@@ -134,7 +134,7 @@ the relevant details.
   ```JS:[injectionFileName];JS:[injectionFileName];...```
 
   Here, the injectionFileName is the name of the js file in the
-  OSINTbackend/OSINTJSInjections directory containing the JS injection,
+  OSINTbackend/profiles/js_injections directory containing the JS injection,
   excluding the .js extension.
 - **meta**: The section describing where to find meta information about the
   article:

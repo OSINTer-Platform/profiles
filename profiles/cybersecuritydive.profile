@@ -1,14 +1,14 @@
 {
   "source": {
     "name": "CyberSecurity Dive",
-    "profileName": "cybersecuritydive",
+    "profile_name": "cybersecuritydive",
     "address": "https://www.cybersecuritydive.com/",
-    "imageURL": "https://pbs.twimg.com/profile_images/1306956880368070660/V0CeoY3v_400x400.jpg",
-    "retrivalMethod": "scraping",
-    "newsPath": "https://www.cybersecuritydive.com/",
-    "scrapingTargets": {
-      "containerList": "section.dash-feed",
-      "linkContainers": "h3[id^=feed-item-title]",
+    "image_url": "https://pbs.twimg.com/profile_images/1306956880368070660/V0CeoY3v_400x400.jpg",
+    "retrival_method": "scraping",
+    "news_path": "https://www.cybersecuritydive.com/",
+    "scraping_targets": {
+      "container_list": "section.dash-feed",
+      "link_containers": "h3[id^=feed-item-title]",
       "links": "a[href]"
     }
   },
