@@ -22,8 +22,8 @@
 		"image_url" : "meta[property='og:image']"
 	},
     "content": {
-      "container": "div.storyBody",
-      "remove": "div.zdnetVideoPlayer;div.relatedContent;section.leadgenads;figure.image:first-child;div.share-bar-wrapper;script;img[src='']"
+      "container": "div.c-articleContent",
+      "remove": "div.c-shortcodePinbox-textList;div.c-shortcodePinbox;div > a.c-shortcodeCommercePromo;figure.c-shortcodeImage:nth-child(1)"
     }
   }
 }

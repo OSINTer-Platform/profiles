@@ -3,7 +3,7 @@
     "name": "Trend Micro",
     "profile_name": "trendmicro",
     "address": "https://www.trendmicro.com/",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Trendmicro_logo.jpg",
+    "image_url": "https://www.pcworld.com/wp-content/uploads/2021/09/trend-micro-logo_crop-100761715-orig.jpg?quality=50&strip=all&w=700",
     "retrival_method": "scraping",
     "news_path": "https://blog.trendmicro.com/category/security/",
 	"scraping_targets": {
@@ -14,7 +14,7 @@
 
   },
   "scraping": {
-    "type": "no-action",
+    "type": "JS:fix_relative_links",
 	"meta" : {
 		"author" : "p.article-authors__list-items__name",
 		"publish_date" : "meta[property='article:published_time']",

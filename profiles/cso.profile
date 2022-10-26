@@ -5,7 +5,7 @@
     "address": "https://www.csoonline.com/",
     "image_url": "https://allvectorlogo.com/img/2016/06/cso-logo.png",
     "retrival_method": "scraping",
-    "news_path": "https://www.csoonline.com/news-analysis/",
+    "news_path": "https://www.csoonline.com/news/",
     "scraping_targets": {
       "container_list": "div.main-col",
       "link_containers": "div.river-well.article",

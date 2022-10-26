@@ -18,7 +18,7 @@
 	},
     "content": {
       "container": "div.td-post-content",
-      "remove": "div.td-post-featured-image;p.has-background:last-child"
+      "remove": "div.td-post-featured-image;p.has-background:last-child;div.td-a-rec;script"
     }
   }
 }
