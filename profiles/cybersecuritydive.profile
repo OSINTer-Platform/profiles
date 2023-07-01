@@ -16,7 +16,7 @@
     "type": "no-scraping",
 	"meta" : {
 		"author" : "meta[name='sailthru.author']",
-		"publish_date" : "meta[name=date]",
+		"publish_date" : "meta[name='sailthru.date']",
 		"title" : "meta[property='og:title']",
 		"description" : "meta[property='og:description']",
 		"image_url" : "meta[property='og:image']"

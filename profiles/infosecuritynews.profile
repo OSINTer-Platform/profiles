@@ -7,8 +7,8 @@
     "retrival_method": "scraping",
     "news_path": "https://www.infosecurity-magazine.com/news/",
     "scraping_targets": {
-      "container_list": "div#webpages-list",
-      "link_containers": "div.webpage-item",
+      "container_list": "ol.webpages-list",
+      "link_containers": "li.webpage-item",
       "links": "a[href]"
     }
   },
@@ -22,7 +22,7 @@
 		"image_url" : "meta[property='og:image']"
 	},
     "content": {
-      "container": "div#layout-",
+      "container": "div.page-content",
       "remove": ""
     }
   }

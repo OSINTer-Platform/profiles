@@ -13,7 +13,7 @@
 	}
   },
   "scraping": {
-    "type": "JS:remove_titles;JS:move_images_outside_table",
+    "type": "JS:remove_titles;JS:move_images_outside_table;JS:scroll_down",
 	"meta" : {
 		"author" : "div[itemprop=author] > meta",
 		"publish_date" : "meta[itemprop=datePublished]",
@@ -23,7 +23,7 @@
 	},
     "content": {
       "container": "div#articlebody",
-      "remove": ".separator:first-child;div.ad_two;div.note-b"
+      "remove": ".separator:first-child;div.ad_two;div.note-b;div.ebook-image;div.ebook-details;div.check_two;div.seperator;style"
     }
   }
 }

@@ -7,23 +7,23 @@
     "retrival_method": "scraping",
     "news_path": "https://www.securityweek.com/",
     "scraping_targets": {
-	  "container_list": "div.view-lastest-security > div.view-content",
-      "link_containers": "span.field-content",
-	  "links": "a[href]"
+      "container_list": "div.sw-home-hero > div.wp-block-column:first-child",
+      "link_containers": "section.zoxrel",
+      "links": "a[href]"
     }
   },
   "scraping": {
     "type": "JS:fix_relative_links",
 	"meta" : {
-		"author" : "div > div.submitted > div > a",
-		"publish_date" : "",
-		"title" : "h2.page-title",
-		"description" : "meta[name=description]",
-		"image_url" : ""
+		"author" : "meta[name=author]",
+		"publish_date" : "meta[property='article:published_time']",
+		"title" : "meta[property='og:title']",
+		"description" : "meta[property='og:description']",
+		"image_url" : "meta[property='og:image']"
 	},
     "content": {
-      "container": "div.node > div.content",
-      "remove": "p:first-child;p > strong > span;div.ad_in_content;div.sharethis;div.author_content;div.sponsored_links_box;div.author-terms;div.disqus_thread;noscript"
+      "container": "div.zox-post-body > div > div",
+      "remove": "div.zox-post-ad-wrap;figure.wp-block-image:first-child"
     }
   }
 }
