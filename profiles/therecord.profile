@@ -7,24 +7,23 @@
     "retrival_method": "dynamic",
     "news_path": "https://therecord.media/all-news/",
     "scraping_targets": {
-	  "container_list": "div.article-listing__list",
-	  "link_containers": "a.article-tile",
-	  "links": ""
+      "container_list": "div.article-listing__list",
+      "link_containers": "a.article-tile",
+      "links": ""
     }
   },
   "scraping": {
     "type": "no-action",
-	"meta" : {
-		"author" : "a.article__editor",
-		"publish_date" : "span.article__date",
-		"title" : "meta[property='og:title']",
-		"description" : "meta[property='og:description']",
-		"image_url" : "meta[property='og:image']"
-	},
+    "meta": {
+      "author": "a.article__editor",
+      "publish_date": "span.article__date",
+      "title": "meta[property='og:title']",
+      "description": "meta[property='og:description']",
+      "image_url": "meta[property='og:image']"
+    },
     "content": {
       "container": "div.article__content",
       "remove": "div.social-share-icons;div.article__tags;div.editor;h1:first-child"
     }
   }
 }
-

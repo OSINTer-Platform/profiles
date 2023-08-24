@@ -14,17 +14,16 @@
   },
   "scraping": {
     "type": "no-action",
-	"meta" : {
-		"author" : "",
-		"publish_date" : "",
-		"title" : "meta[property='og:title']",
-		"description" : "meta[property='og:description']",
-		"image_url" : "meta[property='og:image']"
-	},
+    "meta": {
+      "author": "",
+      "publish_date": "",
+      "title": "meta[property='og:title']",
+      "description": "meta[property='og:description']",
+      "image_url": "meta[property='og:image']"
+    },
     "content": {
       "container": "div.article-column__content",
       "remove": "div.social-share-sticky-menu;div.media-with-label:nth-child(2)"
     }
   }
 }
-

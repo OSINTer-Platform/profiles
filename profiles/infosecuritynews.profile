@@ -14,17 +14,16 @@
   },
   "scraping": {
     "type": "no-action",
-	"meta" : {
-		"author" : "meta[name=author]",
-		"publish_date" : "meta[property='article:published_time']",
-		"title" : "meta[property='og:title']",
-		"description" : "meta[property='og:description']",
-		"image_url" : "meta[property='og:image']"
-	},
+    "meta": {
+      "author": "meta[name=author]",
+      "publish_date": "meta[property='article:published_time']",
+      "title": "meta[property='og:title']",
+      "description": "meta[property='og:description']",
+      "image_url": "meta[property='og:image']"
+    },
     "content": {
       "container": "div.page-content",
       "remove": ""
     }
   }
 }
-

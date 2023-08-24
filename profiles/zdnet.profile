@@ -7,20 +7,20 @@
     "retrival_method": "scraping",
     "news_path": "https://www.zdnet.com/topic/ransomware/",
     "scraping_targets": {
-	  "container_list": "div.river",
+      "container_list": "div.river",
       "link_containers": "article.item",
-	  "links": "a[href]"
+      "links": "a[href]"
     }
   },
   "scraping": {
     "type": "no-action",
-	"meta" : {
-		"author" : "meta[name='author']",
-		"publish_date" : "",
-		"title" : "meta[property='og:title']",
-		"description" : "meta[property='og:description']",
-		"image_url" : "meta[property='og:image']"
-	},
+    "meta": {
+      "author": "meta[name='author']",
+      "publish_date": "",
+      "title": "meta[property='og:title']",
+      "description": "meta[property='og:description']",
+      "image_url": "meta[property='og:image']"
+    },
     "content": {
       "container": "div.c-articleContent",
       "remove": "div.c-shortcodePinbox-textList;div.c-shortcodePinbox;div > a.c-shortcodeCommercePromo;figure.c-shortcodeImage:nth-child(1);div.c-newsletterSignup;div.c-shortcodePinbox-carousel"

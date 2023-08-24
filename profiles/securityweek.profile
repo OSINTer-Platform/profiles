@@ -14,17 +14,16 @@
   },
   "scraping": {
     "type": "JS:fix_relative_links",
-	"meta" : {
-		"author" : "meta[name=author]",
-		"publish_date" : "meta[property='article:published_time']",
-		"title" : "meta[property='og:title']",
-		"description" : "meta[property='og:description']",
-		"image_url" : "meta[property='og:image']"
-	},
+    "meta": {
+      "author": "meta[name=author]",
+      "publish_date": "meta[property='article:published_time']",
+      "title": "meta[property='og:title']",
+      "description": "meta[property='og:description']",
+      "image_url": "meta[property='og:image']"
+    },
     "content": {
       "container": "div.zox-post-body > div > div",
       "remove": "div.zox-post-ad-wrap;figure.wp-block-image:first-child"
     }
   }
 }
-
