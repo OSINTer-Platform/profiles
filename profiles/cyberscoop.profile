@@ -8,7 +8,7 @@
     "news_path": "https://www.cyberscoop.com/news/threats/",
     "scraping_targets": {
       "container_list": "div#archive-post-items",
-      "link_containers": "article.post-item",
+      "link_containers": "article.post-item:not(.post-item--sponsored):not(:has(> header > h3 > a > svg.icon--podcast))",
       "links": "a.post-item__title-link"
     }
   },

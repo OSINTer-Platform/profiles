@@ -23,7 +23,7 @@
     },
     "content": {
       "container": "div#drr-container",
-      "remove": "div.end-note;aside.native-promo;div.brVideoContainer;div.fakesidebar;aside.fakesidebar;aside.nativo-promo;div.tease-promo;script;figcaption;small.credit;.ad;div.wrapAd;div.lb-main"
+      "remove": "div.end-note;aside.native-promo;div.brVideoContainer;div.fakesidebar;aside.fakesidebar;aside.nativo-promo;div.tease-promo;figcaption;small.credit;.ad;div.wrapAd;div.lb-main"
     }
   }
 }

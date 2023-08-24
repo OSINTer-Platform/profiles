@@ -13,7 +13,7 @@
     }
   },
   "scraping": {
-    "type": "JS:fix_relative_links",
+    "type": "JS:scroll_down;JS:fix_relative_links",
     "meta": {
       "author": "",
       "publish_date": "meta[property='article:published_time']",
