@@ -7,24 +7,23 @@
     "retrival_method": "scraping",
     "news_path": "https://www.cyberscoop.com/news/threats/",
     "scraping_targets": {
-      "container_list": "div.articles",
-      "link_containers": "div.article-thumb__information",
-      "links": "a.article-thumb__title"
+      "container_list": "div#archive-post-items",
+      "link_containers": "article.post-item:not(.post-item--sponsored):not(:has(> header > h3 > a > svg.icon--podcast))",
+      "links": "a.post-item__title-link"
     }
   },
   "scraping": {
     "type": "no-action",
-	"meta" : {
-		"author" : "",
-		"publish_date" : "meta[property='article:published_time']",
-		"title" : "meta[property='og:title']",
-		"description" : "meta[property='og:description']",
-		"image_url" : "meta[property='og:image']"
-	},
+    "meta": {
+      "author": "span.single-article__author-names",
+      "publish_date": "meta[property='article:published_time']",
+      "title": "meta[property='og:title']",
+      "description": "meta[property='og:description']",
+      "image_url": "meta[property='og:image']"
+    },
     "content": {
-      "container": "div.article__content-text",
-      "remove": "span.article__meta;div.in-this-story"
+      "container": "div.single-article__content-inner",
+      "remove": "div.ad;footer.single-article__footer"
     }
   }
 }
-

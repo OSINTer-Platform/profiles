@@ -14,17 +14,16 @@
   },
   "scraping": {
     "type": "JS:scroll_down",
-	"meta" : {
-		"author" : "a[rel=author] > span[itemprop=name]",
-		"publish_date" : "time.date",
-		"title" : "meta[property='og:title']",
-		"description" : "meta[property='og:description']",
-		"image_url" : "meta[property='og:image']"
-	},
+    "meta": {
+      "author": "a[rel=author] > span[itemprop=name]",
+      "publish_date": "time.date",
+      "title": "meta[property='og:title']",
+      "description": "meta[property='og:description']",
+      "image_url": "meta[property='og:image']"
+    },
     "content": {
       "container": "main#main > article",
       "remove": "div.xrail;header.article-header;figure.intro-image;aside;div#article-footer-wrap;div#social-footer;section.article-author;nav.page-numbers;div.story-sidebar;a.enlarge-link;section.promoted-comments;div#mc_embed_signup;div.superscroll-pager;div.lSAction;ul.lSPager.lSGallery"
     }
   }
 }
-

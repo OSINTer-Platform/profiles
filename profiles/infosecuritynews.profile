@@ -7,24 +7,23 @@
     "retrival_method": "scraping",
     "news_path": "https://www.infosecurity-magazine.com/news/",
     "scraping_targets": {
-      "container_list": "div#webpages-list",
-      "link_containers": "div.webpage-item",
+      "container_list": "ol.webpages-list",
+      "link_containers": "li.webpage-item",
       "links": "a[href]"
     }
   },
   "scraping": {
     "type": "no-action",
-	"meta" : {
-		"author" : "meta[name=author]",
-		"publish_date" : "meta[property='article:published_time']",
-		"title" : "meta[property='og:title']",
-		"description" : "meta[property='og:description']",
-		"image_url" : "meta[property='og:image']"
-	},
+    "meta": {
+      "author": "meta[name=author]",
+      "publish_date": "meta[property='article:published_time']",
+      "title": "meta[property='og:title']",
+      "description": "meta[property='og:description']",
+      "image_url": "meta[property='og:image']"
+    },
     "content": {
-      "container": "div#layout-",
+      "container": "div.page-content",
       "remove": ""
     }
   }
 }
-

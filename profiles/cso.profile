@@ -7,24 +7,23 @@
     "retrival_method": "scraping",
     "news_path": "https://www.csoonline.com/news/",
     "scraping_targets": {
-      "container_list": "div.main-col",
-      "link_containers": "div.river-well.article",
-      "links": "h3 > a[href]"
+      "container_list": "section.featured-content ",
+      "link_containers": "a[href]",
+      "links": ""
     }
   },
   "scraping": {
     "type": "no-action",
-	"meta" : {
-		"author" : "meta[name=author]",
-		"publish_date" : "meta[name='DC.date.issued']",
-		"title" : "meta[property='og:title']",
-		"description" : "meta[property='og:description']",
-		"image_url" : "meta[property='og:image']"
-	},
+    "meta": {
+      "author": "",
+      "publish_date": "",
+      "title": "meta[property='og:title']",
+      "description": "meta[property='og:description']",
+      "image_url": "meta[property='og:image']"
+    },
     "content": {
-      "container": "div[itemprop=articleBody]",
-      "remove": "aside;div.brVideoContainer;div#sponsoredfakesidebardiv;div.excerpt-text;aside.fakesidebar;div.end-note;div.lb-main;script"
+      "container": "div.article-column__content",
+      "remove": "div.social-share-sticky-menu;div.media-with-label:nth-child(2)"
     }
   }
 }
-
