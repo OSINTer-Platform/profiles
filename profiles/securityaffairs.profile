@@ -2,39 +2,36 @@
   "source": {
     "name": "Security Affairs",
     "profile_name": "securityaffairs",
-    "address": "https://securityaffairs.co/",
-    "image_url": "https://securityaffairs.co/wordpress/wp-content/uploads/2015/12/logo_SecurityAffairs.png",
+    "address": "https://securityaffairs.com/",
+    "image_url": "https://securityaffairs.com/wp-content/uploads/2023/08/logo.png",
     "retrieval_method": "scraping",
     "news_paths": [
-      "https://securityaffairs.co/wordpress/"
+      "https://securityaffairs.com/"
     ],
     "scraping_targets": {
-      "container_list": "div.sidebar_content",
-      "link_containers": "div.post_wrapper",
-      "links": "h3 > a[href]"
+      "container_list": "div.latest-news-block",
+      "link_containers": "div.news-card",
+      "links": "h5 > a[href]"
     }
   },
   "scraping": {
     "meta": {
-      "author": "",
+      "author": "meta[name='author']",
       "publish_date": "meta[property='article:published_time']",
       "title": "meta[property='og:title']",
       "description": "meta[property='og:description']",
       "image_url": "meta[property='og:image']"
     },
     "content": {
-      "container": "div.post_wrapper_inner > div.post_inner_wrapper",
+      "container": "div.article-details-block",
       "remove": [
-        "h2:first-child",
-        "h2:nth-child(2)",
-        "div.mnet_plugin",
-        "div.a-single",
-        "div.ssba",
-        "div.sharedaddy",
-        "div.post_tag",
-        "h5.share_label",
-        "div#social_share_wrapper",
-        "div.secur-content"
+        "div.common-heading",
+        "div.post-time",
+        "img.img-fluid:first-of-type",
+        "h2.wp-block-heading:first-of-type",
+        "div.social-media",
+        "div.cta-tags",
+        "div.adsbyvli"
       ]
     }
   }
