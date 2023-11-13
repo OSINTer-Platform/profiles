@@ -4,8 +4,10 @@
     "profile_name": "cyberscoop",
     "address": "https://www.cyberscoop.com/",
     "image_url": "https://s3.amazonaws.com/sng-global-web-assets/logo/Favicon_CS.png",
-    "retrival_method": "scraping",
-    "news_path": "https://www.cyberscoop.com/news/threats/",
+    "retrieval_method": "scraping",
+    "news_paths": [
+      "https://www.cyberscoop.com/news/threats/"
+    ],
     "scraping_targets": {
       "container_list": "div#archive-post-items",
       "link_containers": "article.post-item:not(.post-item--sponsored):not(:has(> header > h3 > a > svg.icon--podcast))",
@@ -13,7 +15,6 @@
     }
   },
   "scraping": {
-    "type": "no-action",
     "meta": {
       "author": "span.single-article__author-names",
       "publish_date": "meta[property='article:published_time']",
@@ -23,7 +24,10 @@
     },
     "content": {
       "container": "div.single-article__content-inner",
-      "remove": "div.ad;footer.single-article__footer"
+      "remove": [
+        "div.ad",
+        "footer.single-article__footer"
+      ]
     }
   }
 }

@@ -4,16 +4,20 @@
     "profile_name": "securityweek",
     "address": "https://www.securityweek.com/",
     "image_url": "https://mms.businesswire.com/media/20210112005589/en/851776/23/SecurityWeek-Logo.jpg",
-    "retrival_method": "scraping",
-    "news_path": "https://www.securityweek.com/",
+    "retrieval_method": "scraping",
+    "news_paths": [
+      "https://www.securityweek.com/"
+    ],
     "scraping_targets": {
-      "container_list": "div.sw-home-hero > div.wp-block-column:first-child",
+      "container_list": "div#zox_side_trend_widget-1.sw-style-simple > div.zox-widget-side-trend-wrap",
       "link_containers": "section.zoxrel",
       "links": "a[href]"
     }
   },
   "scraping": {
-    "type": "JS:fix_relative_links",
+    "js_injections": [
+      "fix_relative_links"
+    ],
     "meta": {
       "author": "meta[name=author]",
       "publish_date": "meta[property='article:published_time']",
@@ -22,8 +26,11 @@
       "image_url": "meta[property='og:image']"
     },
     "content": {
-      "container": "div.zox-post-body > div > div",
-      "remove": "div.zox-post-ad-wrap;figure.wp-block-image:first-child"
+      "container": "div.zox-post-body",
+      "remove": [
+        "div.zox-post-ad-wrap",
+        "figure.wp-block-image:first-child"
+      ]
     }
   }
 }

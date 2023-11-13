@@ -4,11 +4,17 @@
     "profile_name": "threatpost",
     "address": "https://threatpost.com/",
     "image_url": "https://media.threatpost.com/wp-content/uploads/sites/103/2018/04/12084846/tp_twitter.png",
-    "retrival_method": "rss",
-    "news_path": "https://threatpost.com/feed"
+    "retrieval_method": "rss",
+    "news_paths": [
+      "https://threatpost.com/feed"
+    ],
+    "scraping_targets": {
+      "container_list": "",
+      "link_containers": "",
+      "links": ""
+    }
   },
   "scraping": {
-    "type": "no-action",
     "meta": {
       "author": "",
       "publish_date": "",
@@ -18,7 +24,11 @@
     },
     "content": {
       "container": ".c-article__content",
-      "remove": "img.wp-image-141989;footer;img[alt='Infosec Insiders Newsletter']"
+      "remove": [
+        "img.wp-image-141989",
+        "footer",
+        "img[alt='Infosec Insiders Newsletter']"
+      ]
     }
   }
 }

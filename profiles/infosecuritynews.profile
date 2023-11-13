@@ -4,8 +4,10 @@
     "profile_name": "infosecuritynews",
     "address": "https://www.infosecurity-magazine.com/",
     "image_url": "https://di9mr54a05a64.cloudfront.net/api-infosecurityeurope.expoplatform.com/image/500x500xc-f/MTYyMzg4MDM3MzYwY2E3MmI1YTkyYWI=.png",
-    "retrival_method": "scraping",
-    "news_path": "https://www.infosecurity-magazine.com/news/",
+    "retrieval_method": "scraping",
+    "news_paths": [
+      "https://www.infosecurity-magazine.com/news/"
+    ],
     "scraping_targets": {
       "container_list": "ol.webpages-list",
       "link_containers": "li.webpage-item",
@@ -13,7 +15,6 @@
     }
   },
   "scraping": {
-    "type": "no-action",
     "meta": {
       "author": "meta[name=author]",
       "publish_date": "meta[property='article:published_time']",
@@ -23,7 +24,7 @@
     },
     "content": {
       "container": "div.page-content",
-      "remove": ""
+      "remove": []
     }
   }
 }

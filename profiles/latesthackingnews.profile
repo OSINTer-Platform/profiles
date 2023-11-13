@@ -4,8 +4,10 @@
     "profile_name": "latesthackingnews",
     "address": "https://latesthackingnews.com/",
     "image_url": "https://latesthackingnews.com/wp-content/uploads/2021/01/LHN.png",
-    "retrival_method": "scraping",
-    "news_path": "https://latesthackingnews.com/category/cyber-security-news/",
+    "retrieval_method": "scraping",
+    "news_paths": [
+      "https://latesthackingnews.com/category/cyber-security-news/"
+    ],
     "scraping_targets": {
       "container_list": "ul.penci-wrapper-data",
       "link_containers": "h2.penci-entry-title",
@@ -13,7 +15,10 @@
     }
   },
   "scraping": {
-    "type": "JS:scroll_down;JS:fix_relative_links",
+    "js_injections": [
+      "scroll_down",
+      "fix_relative_links"
+    ],
     "meta": {
       "author": "",
       "publish_date": "meta[property='article:published_time']",
@@ -23,7 +28,10 @@
     },
     "content": {
       "container": "div#penci-post-entry-inner",
-      "remove": "div.post-tags;aside"
+      "remove": [
+        "div.post-tags",
+        "aside"
+      ]
     }
   }
 }

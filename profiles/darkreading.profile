@@ -4,8 +4,10 @@
     "profile_name": "darkreading",
     "address": "https://www.darkreading.com/",
     "image_url": "https://beta.darkreading.com/images/og-image.jpg",
-    "retrival_method": "scraping",
-    "news_path": "https://www.darkreading.com/threat-intelligence/",
+    "retrieval_method": "scraping",
+    "news_paths": [
+      "https://www.darkreading.com/threat-intelligence/"
+    ],
     "scraping_targets": {
       "container_list": "div.infinite-scroll-component",
       "link_containers": "div.topic-content-article",
@@ -13,7 +15,6 @@
     }
   },
   "scraping": {
-    "type": "no-action",
     "meta": {
       "author": "",
       "publish_date": "meta[property='article:published_time']",
@@ -23,7 +24,7 @@
     },
     "content": {
       "container": "div.article-content",
-      "remove": ""
+      "remove": []
     }
   }
 }

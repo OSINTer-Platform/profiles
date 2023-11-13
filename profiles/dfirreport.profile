@@ -4,8 +4,10 @@
     "profile_name": "dfirreport",
     "address": "https://thedfirreport.com/",
     "image_url": "https://pbs.twimg.com/profile_images/1247257789660934144/2AaKCNiy_400x400.jpg",
-    "retrival_method": "scraping",
-    "news_path": "https://thedfirreport.com/",
+    "retrieval_method": "scraping",
+    "news_paths": [
+      "https://thedfirreport.com/"
+    ],
     "scraping_targets": {
       "container_list": "div.posts-holder",
       "link_containers": "h2.entry-title",
@@ -13,7 +15,9 @@
     }
   },
   "scraping": {
-    "type": "JS:remove_titles",
+    "js_injections": [
+      "remove_titles"
+    ],
     "meta": {
       "author": "meta[property='og:site_name']",
       "publish_date": "meta[property='article:published_time']",
@@ -23,7 +27,11 @@
     },
     "content": {
       "container": "div.entry-content",
-      "remove": "div.sharedaddy;div.jp-relatedposts;noscript"
+      "remove": [
+        "div.sharedaddy",
+        "div.jp-relatedposts",
+        "noscript"
+      ]
     }
   }
 }
