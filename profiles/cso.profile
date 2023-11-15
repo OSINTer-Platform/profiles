@@ -26,7 +26,8 @@
       "container": "div.article-column__content",
       "remove": [
         "div.social-share-sticky-menu",
-        "div.media-with-label:nth-child(2)"
+        "div.media-with-label:nth-child(2)",
+        "div.jwPlayer--floatingContainer"
       ]
     }
   }
