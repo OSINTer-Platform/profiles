@@ -5,7 +5,9 @@
     "address": "[the root address for the website]",
     "image_url": "[url to icon image]",
     "retrieval_method": "scraping",
-    "news_paths": "[url to the front page overview to scrape]",
+    "news_paths": [
+      "[url to the front page overview to scrape]"
+    ],
     "scraping_targets": {
       "container_list": "[selector for container of all news links]",
       "link_containers": "[selector for each container for each news link]",
