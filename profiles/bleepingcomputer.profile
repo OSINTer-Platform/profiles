@@ -4,14 +4,14 @@
     "profile_name": "bleepingcomputer",
     "address": "https://www.bleepingcomputer.com/",
     "image_url": "https://www.bleepstatic.com/logo/bleepingcomputer-logo.png",
-    "retrieval_method": "rss",
+    "retrieval_method": "scraping",
     "news_paths": [
-      "https://www.bleepingcomputer.com/feed/"
+      "https://www.bleepingcomputer.com/"
     ],
     "scraping_targets": {
-      "container_list": "",
-      "link_containers": "",
-      "links": ""
+      "container_list": "ul#bc-home-news-main-wrap",
+      "link_containers": "li",
+      "links": "h4 > a[href]"
     }
   },
   "scraping": {
