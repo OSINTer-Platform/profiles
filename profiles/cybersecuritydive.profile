@@ -16,11 +16,26 @@
   },
   "scraping": {
     "meta": {
-      "author": "meta[name='sailthru.author']",
-      "publish_date": "meta[name='sailthru.date']",
-      "title": "meta[property='og:title']",
-      "description": "meta[property='og:description']",
-      "image_url": "meta[property='og:image']"
+      "author": {
+        "element": "meta[name='sailthru.author']",
+        "content_field": "content"
+      },
+      "publish_date": {
+        "element": "meta[name='sailthru.date']",
+        "content_field": "content"
+      },
+      "title": {
+        "element": "meta[property='og:title']",
+        "content_field": "content"
+      },
+      "description": {
+        "element": "meta[property='og:description']",
+        "content_field": "content"
+      },
+      "image_url": {
+        "element": "meta[property='og:image']",
+        "content_field": "content"
+      }
     },
     "content": {
       "container": "div.article-body",

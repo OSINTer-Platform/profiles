@@ -17,10 +17,19 @@
   "scraping": {
     "meta": {
       "author": "div.cs-entry__header-info div.cs-meta-author > a > span.cs-author",
-      "publish_date": "meta[property='article:published_time']",
-      "title": "meta[property='og:title']",
+      "publish_date": {
+        "element": "meta[property='article:published_time']",
+        "content_field": "content"
+      },
+      "title": {
+        "element": "meta[property='og:title']",
+        "content_field": "content"
+      },
       "description": "p.is-style-cnvs-paragraph-callout",
-      "image_url": "meta[property='og:image']"
+      "image_url": {
+        "element": "meta[property='og:image']",
+        "content_field": "content"
+      }
     },
     "content": {
       "container": "div.entry-content",

@@ -18,9 +18,18 @@
     "meta": {
       "author": "a.article__editor",
       "publish_date": "span.article__date",
-      "title": "meta[property='og:title']",
-      "description": "meta[property='og:description']",
-      "image_url": "meta[property='og:image']"
+      "title": {
+        "element": "meta[property='og:title']",
+        "content_field": "content"
+      },
+      "description": {
+        "element": "meta[property='og:description']",
+        "content_field": "content"
+      },
+      "image_url": {
+        "element": "meta[property='og:image']",
+        "content_field": "content"
+      }
     },
     "content": {
       "container": "div.article__content",

@@ -22,10 +22,22 @@
     ],
     "meta": {
       "author": "div[itemprop=author] > meta",
-      "publish_date": "meta[itemprop=datePublished]",
-      "title": "meta[property='og:title']",
-      "description": "meta[property='og:description']",
-      "image_url": "meta[property='og:image']"
+      "publish_date": {
+        "element": "meta[itemprop=datePublished]",
+        "content_field": "content"
+      },
+      "title": {
+        "element": "meta[property='og:title']",
+        "content_field": "content"
+      },
+      "description": {
+        "element": "meta[property='og:description']",
+        "content_field": "content"
+      },
+      "image_url": {
+        "element": "meta[property='og:image']",
+        "content_field": "content"
+      }
     },
     "content": {
       "container": "div#articlebody",

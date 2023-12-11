@@ -19,9 +19,18 @@
     "meta": {
       "author": "span[itemprop=author]",
       "publish_date": "span > time",
-      "title": "meta[property='og:title']",
-      "description": "meta[property='og:description']",
-      "image_url": "meta[property='og:image']"
+      "title": {
+        "element": "meta[property='og:title']",
+        "content_field": "content"
+      },
+      "description": {
+        "element": "meta[property='og:description']",
+        "content_field": "content"
+      },
+      "image_url": {
+        "element": "meta[property='og:image']",
+        "content_field": "content"
+      }
     },
     "content": {
       "container": "article.Content_content__RAlBs",

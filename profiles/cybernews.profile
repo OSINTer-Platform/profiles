@@ -23,10 +23,19 @@
     ],
     "meta": {
       "author": "a.link.article-info__link",
-      "publish_date": "meta[property='article:published_time']",
+      "publish_date": {
+        "element": "meta[property='article:published_time']",
+        "content_field": "content"
+      },
       "title": "h1.heading",
-      "description": "meta[name='description']",
-      "image_url": "meta[property='og:image']"
+      "description": {
+        "element": "meta[name='description']",
+        "content_field": "content"
+      },
+      "image_url": {
+        "element": "meta[property='og:image']",
+        "content_field": "content"
+      }
     },
     "content": {
       "container": "div.content",

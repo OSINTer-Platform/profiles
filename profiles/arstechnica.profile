@@ -20,10 +20,22 @@
     ],
     "meta": {
       "author": "a[rel=author] > span[itemprop=name]",
-      "publish_date": "time.date",
-      "title": "meta[property='og:title']",
-      "description": "meta[property='og:description']",
-      "image_url": "meta[property='og:image']"
+      "publish_date": {
+        "element": "time.date",
+        "content_field": "datetime"
+      },
+      "title": {
+        "element": "meta[property='og:title']",
+        "content_field": "content"
+      },
+      "description": {
+        "element": "meta[property='og:description']",
+        "content_field": "content"
+      },
+      "image_url": {
+        "element": "meta[property='og:image']",
+        "content_field": "content"
+      }
     },
     "content": {
       "container": "main#main > article",

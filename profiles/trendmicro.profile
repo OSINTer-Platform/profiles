@@ -20,10 +20,19 @@
     ],
     "meta": {
       "author": "p.article-authors__list-items__name",
-      "publish_date": "meta[property='article:published_time']",
-      "title": "meta[property='og:title']",
+      "publish_date": {
+        "element": "meta[property='article:published_time']",
+        "content_field": "content"
+      },
+      "title": {
+        "element": "meta[property='og:title']",
+        "content_field": "content"
+      },
       "description": "p.article-details__description",
-      "image_url": "meta[property='og:image']"
+      "image_url": {
+        "element": "meta[property='og:image']",
+        "content_field": "content"
+      }
     },
     "content": {
       "container": "main.main--content",

@@ -19,9 +19,18 @@
     "meta": {
       "author": "",
       "publish_date": "span.date",
-      "title": "meta[name='twitter:title']",
-      "description": "meta[name='twitter:description']",
-      "image_url": "meta[name='twitter:image']"
+      "title": {
+        "element": "meta[name='twitter:title']",
+        "content_field": "content"
+      },
+      "description": {
+        "element": "meta[name='twitter:description']",
+        "content_field": "content"
+      },
+      "image_url": {
+        "element": "meta[name='twitter:image']",
+        "content_field": "content"
+      }
     },
     "content": {
       "container": "div.entry-content",
