@@ -38,7 +38,7 @@
       }
     },
     "content": {
-      "container": "main#main > article",
+      "container": "div.article-content[itemprop='articleBody']",
       "remove": [
         "div.xrail",
         "header.article-header",
