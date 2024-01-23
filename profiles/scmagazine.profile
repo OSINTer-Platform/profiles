@@ -33,7 +33,7 @@
       }
     },
     "content": {
-      "container": "article.Content_content__RAlBs",
+      "container": "article[class^=\"Content_content\"]",
       "remove": [
         "div.ad"
       ]
