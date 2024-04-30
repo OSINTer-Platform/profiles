@@ -9,19 +9,16 @@
       "https://www.computerworld.com/nl/category/security/"
     ],
     "scraping_targets": {
-      "container_list": "div.main-col",
-      "link_containers": "div.river-well.article",
-      "links": "h3 > a[href]"
+      "container_list": "div.latest-content__content",
+      "link_containers": "div.latest-content__content-featured, div.latest-content__card-main, div.latest-content__card-secondary",
+      "links": "a[href]"
     }
   },
   "scraping": {
     "meta": {
-      "author": {
-        "element": "meta[name=author]",
-        "content_field": "content"
-      },
+      "author": "div.author-bio div.author__name a",
       "publish_date": {
-        "element": "meta[name='DC.date.issued']",
+        "element": "meta[name=date]",
         "content_field": "content"
       },
       "title": {
@@ -38,20 +35,10 @@
       }
     },
     "content": {
-      "container": "div#drr-container",
+      "container": "div#remove_no_follow",
       "remove": [
-        "div.end-note",
-        "aside.native-promo",
-        "div.brVideoContainer",
-        "div.fakesidebar",
-        "aside.fakesidebar",
-        "aside.nativo-promo",
-        "div.tease-promo",
-        "figcaption",
-        "small.credit",
-        ".ad",
-        "div.wrapAd",
-        "div.lb-main"
+        ".advert",
+        ".jwPlayer--floatingContainer"
       ]
     }
   }

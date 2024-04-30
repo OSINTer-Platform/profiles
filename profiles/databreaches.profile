@@ -23,11 +23,11 @@
       },
       "title": "title",
       "description": {
-        "element": "meta[name='description']",
+        "element": "meta[name='og:description']",
         "content_field": "content"
       },
       "image_url": {
-        "element": "div.site-branding img",
+        "element": ".bottom-header-wrapper img",
         "content_field": "src"
       }
     },

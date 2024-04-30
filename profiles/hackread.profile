@@ -46,7 +46,8 @@
         "h3#related-articles",
         "h3#related-topics",
         "h3#related-stories",
-        ".adsbygoogle"
+        ".adsbygoogle",
+        "div.wp-block-image:first-child > figure"
       ]
     }
   }

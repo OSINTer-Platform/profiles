@@ -37,7 +37,8 @@
         "div.social-share-icons",
         "div.article__tags",
         "div.editor",
-        "h1:first-child"
+        "h1:first-child",
+        "div.article__pagination"
       ]
     }
   }

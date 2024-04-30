@@ -15,6 +15,9 @@
     }
   },
   "scraping": {
+    "js_injections": [
+      "scroll_down"
+    ],
     "meta": {
       "author": "div.jeg_meta_author > a",
       "publish_date": {
@@ -41,7 +44,8 @@
         "div.sharedaddy",
         "div#jp-relatedposts",
         "div.jeg_post_tags",
-        "div[data-thecy-trackbid]"
+        "div[data-thecy-trackbid]",
+        "noscript"
       ]
     }
   }

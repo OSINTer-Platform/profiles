@@ -42,7 +42,8 @@
         ".cnx-ps",
         ".cnx-main-container-flex",
         "div.cz-related-article-wrapp",
-        "p:first-child > img"
+        "p:first-child > img",
+        "div:first-child > figure > img"
       ]
     }
   }
