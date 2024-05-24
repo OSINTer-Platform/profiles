@@ -5,7 +5,7 @@
     "address": "https://nakedsecurity.sophos.com/",
     "image_url": "https://www.cybersmartnv.org/business/wp-content/uploads/sites/4/2019/07/NakedSecurity1.png",
     "retrieval_method": "scraping",
-    "news_path": [
+    "news_paths": [
       "https://nakedsecurity.sophos.com/"
     ],
     "scraping_targets": {
