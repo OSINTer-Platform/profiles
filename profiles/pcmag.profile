@@ -35,7 +35,7 @@
       }
     },
     "content": {
-      "container": "article > div#id_text",
+      "container": "article[class]",
       "remove": [
         "div[data-parent-group='related-stories']",
         "div[x-init]",
