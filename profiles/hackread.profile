@@ -6,9 +6,9 @@
     "image_url": "https://www.hackread.com/wp-content/uploads/2023/08/Hackread-logo.png",
     "retrieval_method": "scraping",
     "news_paths": [
-      "https://www.hackread.com/hacking-news/",
-      "https://www.hackread.com/latest-cyber-crime/",
-      "https://www.hackread.com/security/"
+      "https://www.hackread.com/category/hacking-news/",
+      "https://www.hackread.com/category/latest-cyber-crime/",
+      "https://www.hackread.com/category/security/"
     ],
     "scraping_targets": {
       "container_list": "div.cs-posts-area__main",
@@ -47,7 +47,8 @@
         "h3#related-topics",
         "h3#related-stories",
         ".adsbygoogle",
-        "div.wp-block-image:first-child > figure"
+        "div.wp-block-image:first-child > figure",
+        ".gallery"
       ]
     }
   }
