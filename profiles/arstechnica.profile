@@ -6,12 +6,12 @@
     "image_url": "https://logos-download.com/wp-content/uploads/2021/02/Ars_Technica_Logo.png",
     "retrieval_method": "scraping",
     "news_paths": [
-      "https://arstechnica.com/information-technology/"
+      "https://arstechnica.com/security/"
     ],
     "scraping_targets": {
-      "container_list": "main#main > section.with-xrail:nth-child(2) > div > ol",
-      "link_containers": "li.tease.article",
-      "links": "a:first-child"
+      "container_list": "main#main > div:nth-child(2) > div:has(article[id^='card'])",
+      "link_containers": "article[id^='card']",
+      "links": "h2 a[href]"
     }
   },
   "scraping": {
@@ -19,10 +19,10 @@
       "scroll_down"
     ],
     "meta": {
-      "author": "a[rel=author] > span[itemprop=name]",
+      "author": "",
       "publish_date": {
-        "element": "time.date",
-        "content_field": "datetime"
+        "element": "meta[property='article:published_time']",
+        "content_field": "content"
       },
       "title": {
         "element": "meta[property='og:title']",
@@ -38,23 +38,15 @@
       }
     },
     "content": {
-      "container": "div.article-content[itemprop='articleBody']",
+      "container": "main#main > article",
       "remove": [
-        "div.xrail",
-        "header.article-header",
-        "figure.intro-image",
-        "aside",
-        "div#article-footer-wrap",
-        "div#social-footer",
-        "section.article-author",
-        "nav.page-numbers",
-        "div.story-sidebar",
-        "a.enlarge-link",
-        "section.promoted-comments",
-        "div#mc_embed_signup",
-        "div.superscroll-pager",
-        "div.lSAction",
-        "ul.lSPager.lSGallery"
+        "header",
+        ".ad-wrapper",
+        ".author-mini-bio",
+        ".story-tools",
+        ".text-settings-dropdown-story",
+        ".caption-credit",
+        ".ars-interlude-container"
       ]
     }
   }

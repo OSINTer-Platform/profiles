@@ -9,9 +9,9 @@
       "https://www.csoonline.com/news/"
     ],
     "scraping_targets": {
-      "container_list": "section.featured-content ",
-      "link_containers": "a[href]",
-      "links": ""
+      "container_list": "div#article > div > div.content-listing-articles__container",
+      "link_containers": "div.content-listing-articles__row ",
+      "links": "a[href]"
     }
   },
   "scraping": {
@@ -32,11 +32,13 @@
       }
     },
     "content": {
-      "container": "div.article-column__content",
+      "container": "div#remove_no_follow",
       "remove": [
         "div.social-share-sticky-menu",
         "div.media-with-label:nth-child(2)",
-        "div.jwPlayer--floatingContainer"
+        "div.jwPlayer--floatingContainer",
+        ".advert",
+        ".miso-smart-answers-discovery"
       ]
     }
   }
