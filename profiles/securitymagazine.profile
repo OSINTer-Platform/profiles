@@ -9,8 +9,8 @@
       "https://www.securitymagazine.com/topics/2236-cybersecurity-news"
     ],
     "scraping_targets": {
-      "container_list": "div.articles-list__row",
-      "link_containers": "article",
+      "container_list": "section#topic-featured-articles",
+      "link_containers": "li > article",
       "links": "h2 > a[href]"
     }
   },
@@ -33,7 +33,7 @@
       }
     },
     "content": {
-      "container": "div.article-body",
+      "container": "div.content",
       "remove": []
     }
   }

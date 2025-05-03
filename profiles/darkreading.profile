@@ -4,7 +4,7 @@
     "profile_name": "darkreading",
     "address": "https://www.darkreading.com/",
     "image_url": "https://beta.darkreading.com/images/og-image.jpg",
-    "retrieval_method": "scraping",
+    "retrieval_method": "dynamic",
     "news_paths": [
       "https://www.darkreading.com/",
       "https://www.darkreading.com/program/dr-global"

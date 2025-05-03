@@ -17,8 +17,8 @@
   "scraping": {
     "js_injections": [],
     "meta": {
-      "author": "span[itemprop=author]",
-      "publish_date": "span > time",
+      "author": "meta[property='article:author']",
+      "publish_date": "meta[property='article:published_time']",
       "title": {
         "element": "meta[property='og:title']",
         "content_field": "content"

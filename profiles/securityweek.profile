@@ -4,7 +4,7 @@
     "profile_name": "securityweek",
     "address": "https://www.securityweek.com/",
     "image_url": "https://mms.businesswire.com/media/20210112005589/en/851776/23/SecurityWeek-Logo.jpg",
-    "retrieval_method": "scraping",
+    "retrieval_method": "dynamic",
     "news_paths": [
       "https://www.securityweek.com/"
     ],
